@@ -5,8 +5,16 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-color: #181818	;
   font-family: 'Arvo', serif;
+}
+
+.App {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 100;
+  overflow: hidden;
 }
 
 body {
@@ -22,13 +30,18 @@ body {
   cursor: default;
 }
 
+.hooks-main {
+  position: relative;
+  z-index: 300;
+}
+
 .hooks-main > svg {
   display: none;
 }
 
 .hooks-main > div {
   position: absolute;
-  z-index: 0;
+  z-index: 200;
   will-change: transform;
   border-radius: 50%;
   background: #FF23A4;
@@ -95,6 +108,7 @@ body {
   transition: all .5s;
   position: relative;
   text-align: center;
+  z-index: 400;
 }
 
 .nav-item a:after{
@@ -115,5 +129,23 @@ body {
 
 .nav-item a:hover:after{
   width: 50%;
+}
+
+.circle-1{
+  position: absolute;
+  bottom: -400px;
+  right: -300px;
+}
+
+.circle-2{
+  position: absolute;
+  top: -300px;
+  left: -300px;
+}
+
+.circle-3{
+  position: absolute;
+  top: 300px;
+  left:1000px;
 }
 

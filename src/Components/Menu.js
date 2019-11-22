@@ -6,6 +6,7 @@ const Menu = () => {
     <Nav
       activeKey="/home"
       className='pt-5 justify-content-end'
+      style={{paddingRight: 200}}
       //onSelect={selectedKey => alert(`selected ${selectedKey}`)}
     >
       <Nav.Item>
