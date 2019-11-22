@@ -3,10 +3,26 @@ import {withRouter} from 'react-router-dom'
 import {animated, useSpring} from "react-spring";
 
 const AnimatedCircle = () => {
-  const props = useSpring({ x: 100, from: { x: 0 } })
+  const props = useSpring({ rx: 60, ry:60, cx:60, cy:70, from: { rx: 30, ry:40, cx:55, cy:75,} })
   return (
-    <animated.svg strokeDashoffset={props.x}>
-      <path d="..." />
+    <animated.svg strokeDashoffset={props}>
+      <defs>
+        <linearGradient spreadMethod="pad" y2="0.914063" x2="0.738281" y1="0" x1="0" id="svg_5">
+          <stop offset="0" stopColor={(props.location.pathname === '/')? "#b431f5" : (props.location.pathname === '/resume')? '#007bff' : '#ACE900'}/>
+          <stop offset="0.980469" stopOpacity="0" stopColor="0"/>
+        </linearGradient>
+      </defs>
+      <g>
+        <title>Layer 1</title>
+        <ellipse
+          ry="60"
+          rx="60"
+          id="svg_8"
+          cy="60"
+          cx= "70"
+          fillOpacity="null"
+          fill="url(#svg_5)"/>
+      </g>
     </animated.svg>
   )
 

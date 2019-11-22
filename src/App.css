@@ -16,6 +16,7 @@ body,
   position: absolute;
   z-index: 100;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 body {
@@ -107,6 +108,7 @@ body {
 .app-container{
   width: 100% !important;
   overflow-x: hidden!important;
+  overflow-y:hidden;
 }
 
 .nav-item a {
@@ -185,6 +187,7 @@ body {
 
 .main-container {
   padding-left: 20%;
+  overflow-y: hidden;
 }
 
 .main-menu{
@@ -215,9 +218,15 @@ body {
 }
 
 @media only screen and (max-width: 667px) {
+
+  .App{
+    overflow-y: auto!important;
+  }
+
   .app-container{
     width: 100% !important;
     overflow-x: hidden!important;
+    overflow-y: auto;
   }
 
   .main-container {
@@ -231,7 +240,7 @@ body {
     height: auto!important;
     padding-top: 30%;
     padding-bottom: 30%;
-    overflow-y: auto;
+    overflow-y: auto!important;
   }
 
 
