@@ -5,7 +5,8 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: white;
+  background-color: black;
+  font-family: 'Arvo', serif;
 }
 
 body {
@@ -27,9 +28,10 @@ body {
 
 .hooks-main > div {
   position: absolute;
+  z-index: 0;
   will-change: transform;
   border-radius: 50%;
-  background: deepskyblue;
+  background: #FF23A4;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   opacity: 0.6;
 }
@@ -80,5 +82,38 @@ body {
   height: 100%;
   filter: url('#goo');
   overflow: hidden;
+}
+
+.nav-item{
+  color: white;
+  font-size: 22px;
+
+}
+
+.nav-item a {
+  color: white;
+  transition: all .5s;
+  position: relative;
+  text-align: center;
+}
+
+.nav-item a:after{
+  content: '';
+  background-color: #ACE900;
+  width:0%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left:0;
+  margin-left: 25%;
+  transition: all .5s;
+}
+
+.nav-item a:hover{
+  color: white;
+}
+
+.nav-item a:hover:after{
+  width: 50%;
 }
 
