@@ -217,7 +217,7 @@ body {
   font-size: 18px;
 }
 
-@media only screen and (max-width: 667px) {
+@media only screen and (max-width: 812px) {
 
   .App{
     overflow-y: auto!important;

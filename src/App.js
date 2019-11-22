@@ -47,13 +47,13 @@ const App = () =>  {
     <div className="App">
       <HashRouter>
       <Container className='position-relative app-container' style={{height: '100%'}} fluid>
-        {(height > 768 )? <Goo /> : null}
+        {(height > 1024 )? <Goo /> : null}
         <Menu />
         <Content />
       </Container>
       <Circle className='circle-1'/>
       <Circle className='circle-2'/>
-        {(height > 768 )? null : <Circle className='circle-3'/>}
+        {(height > 1024 )? null : <Circle className='circle-3'/>}
       </HashRouter>
     </div>
   );
