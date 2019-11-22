@@ -161,3 +161,25 @@ body {
   left:1000px;
 }
 
+.contact-link {
+  color: white;
+}
+
+.contact-link:hover {
+  color: #ACE900!important;
+  text-decoration: none;
+}
+
+.contact-link:link, .contact-link:active  {
+  color: white;
+}
+
+.contact-link-a {
+  color: white;
+  transition: all .5s;
+}
+
+.contact-link-a:hover {
+  color: #ACE900!important;
+}
+

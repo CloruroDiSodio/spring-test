@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from "react-router-dom";
-import { FiBookOpen, FiBriefcase, FiCode } from "react-icons/fi";
+import { FiBookOpen, FiBriefcase, FiCode, FiUser } from "react-icons/fi";
 
 const Resume = () => {
 
@@ -8,10 +8,30 @@ const Resume = () => {
     <div className='w-100 h-75 d-flex justify-content-center flex-column align-items-start' style={{paddingLeft: 200}}>
       <div className='d-flex flex-column'>
         <div className='d-flex'>
-          <h1 style={{color: '#b431f5', fontSize: 70, zIndex:400}} className='position-relative mr-3 mb-0'>Resume</h1>
+          <h1 style={{color: '#ACE900', fontSize: 70, zIndex:400}} className='position-relative mr-3 mb-0'>Resume</h1>
         </div>
       </div>
      <div className='d-flex position-relative flex-column w-100'>
+       <div className='d-flex align-items-start pt-5' >
+         <FiUser className='mr-3 position-relative text-white mt-1 ' style={{fontSize: 25, zIndex: 400}}/>
+         <div className='d-flex flex-column text-white position-relative' style={{fontSize: 18, zIndex: 400}}>
+           <p className='text-white mb-1 font-weight-bold' >
+             Denise Moscon
+           </p>
+           <p  className='text-white  mb-0'>
+             25 yo
+           </p>
+           <p  className='text-white  mb-0'>
+             Front-end Developer
+           </p>
+           <p  className='text-white mb-0'>
+             Web enthusiast, pathological curious,
+             bulimic reader, oddities lover
+           </p>
+         </div>
+       </div>
+
+
        <div className='d-flex align-items-start pt-5' >
          <FiBookOpen className='mr-3 position-relative text-white mt-1 ' style={{fontSize: 25, zIndex: 400}}/>
          <div className='d-flex flex-column text-white position-relative' style={{fontSize: 18, zIndex: 400}}>
@@ -26,6 +46,7 @@ const Resume = () => {
            </p>
        </div>
        </div>
+
        <div className='d-flex align-items-start pt-5' >
          <FiBriefcase className='mr-3 position-relative text-white mt-1 ' style={{fontSize: 25, zIndex: 400}}/>
          <div className='d-flex flex-column text-white position-relative' style={{fontSize: 18, zIndex: 400}}>
@@ -40,6 +61,7 @@ const Resume = () => {
            </p>
          </div>
        </div>
+
        <div className='d-flex align-items-start pt-5' >
          <FiCode className='mr-3 position-relative text-white mt-1 ' style={{fontSize: 25, zIndex: 400}}/>
          <div className='d-flex flex-column text-white position-relative' style={{fontSize: 18, zIndex: 400}}>
