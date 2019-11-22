@@ -7,6 +7,7 @@ body,
   padding: 0;
   background-color: #181818	;
   font-family: 'Arvo', serif;
+  overflow-x: hidden;
 }
 
 .App {
@@ -14,7 +15,7 @@ body,
   height: 100%;
   position: absolute;
   z-index: 100;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 body {
@@ -103,6 +104,11 @@ body {
 
 }
 
+.app-container{
+  width: 100% !important;
+  overflow-x: hidden!important;
+}
+
 .nav-item a {
   color: white;
   transition: all .5s;
@@ -155,12 +161,6 @@ body {
   left: -300px;
 }
 
-.circle-3{
-  position: absolute;
-  top: 300px;
-  left:1000px;
-}
-
 .contact-link {
   color: white;
 }
@@ -181,5 +181,116 @@ body {
 
 .contact-link-a:hover {
   color: #ACE900!important;
+}
+
+.main-container {
+  padding-left: 20%;
+}
+
+.main-menu{
+  padding-right: 20%;
+}
+
+.main-title{
+  font-size:110px ;
+}
+
+.main-p {
+  font-size: 22px;
+}
+
+.main-based{
+  font-size: 18px;
+}
+
+.resume-title{
+  font-size: 70px;
+}
+
+.resume-icon{
+  font-size: 25px;
+}
+.resume-p{
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 667px) {
+  .app-container{
+    width: 100% !important;
+    overflow-x: hidden!important;
+  }
+
+  .main-container {
+    padding-left: 10%;
+    padding-top: 40%;
+    overflow-x: hidden!important;
+    overflow-y: hidden!important;
+  }
+
+  .main-container.resume{
+    height: auto!important;
+    padding-top: 30%;
+    padding-bottom: 30%;
+    overflow-y: auto;
+  }
+
+
+  .main-menu{
+    padding-right: 0%;
+    position: fixed;
+    width: 100%;
+    background: rgb(24,24,24);
+    background: linear-gradient(0deg, rgba(24,24,24,1) 0%, rgba(24,24,24,1) 40%, rgba(24,24,24,1) 100%);
+    z-index: 500!important;
+    margin-left: -15px!important;
+    padding-bottom: 15px;
+  }
+
+  .main-title{
+    font-size:50px ;
+  }
+
+  .main-p {
+    font-size: 16px;
+  }
+
+  .main-based{
+    font-size: 14px;
+  }
+
+  .nav-item{
+    color: white;
+    font-size: 18px;
+  }
+
+  .resume-title{
+    font-size: 50px;
+  }
+
+  .resume-icon{
+    font-size: 20px;
+  }
+  .resume-p{
+    font-size: 14px;
+    padding-right: 15px;
+  }
+
+  .circle-1{
+    position: fixed;
+    bottom: 200px;
+    right: -40px;
+  }
+
+  .circle-2{
+    position: fixed;
+    top: 100px;
+    left: 20px;
+  }
+
+  .circle-3{
+    position: fixed;
+    bottom: -50px;
+    left:20px;
+  }
 }
 

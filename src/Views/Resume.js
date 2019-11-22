@@ -5,16 +5,16 @@ import { FiBookOpen, FiBriefcase, FiCode, FiUser } from "react-icons/fi";
 const Resume = () => {
 
   return(
-    <div className='w-100 h-100 d-flex justify-content-center flex-column align-items-start' style={{paddingLeft: 200}}>
+    <div className='w-100 h-100 d-flex justify-content-center flex-column align-items-start main-container resume'>
       <div className='d-flex flex-column'>
         <div className='d-flex'>
-          <h1 style={{color: '#ACE900', fontSize: 70, zIndex:400}} className='position-relative mr-3 mb-0'>Resume</h1>
+          <h1 style={{color: '#ACE900', zIndex:400}} className='position-relative mr-3 mb-0 resume-title'>Resume</h1>
         </div>
       </div>
      <div className='d-flex position-relative flex-column w-100'>
        <div className='d-flex align-items-start pt-5' >
-         <FiUser className='mr-3 position-relative text-white mt-1 ' style={{fontSize: 25, zIndex: 400}}/>
-         <div className='d-flex flex-column text-white position-relative' style={{fontSize: 18, zIndex: 400}}>
+         <FiUser className='mr-3 position-relative text-white mt-1 resume-icon' style={{ zIndex: 400}}/>
+         <div className='d-flex flex-column text-white position-relative resume-p' style={{ zIndex: 400}}>
            <p className='text-white mb-1 font-weight-bold' >
              Denise Moscon
            </p>
@@ -33,8 +33,8 @@ const Resume = () => {
 
 
        <div className='d-flex align-items-start pt-5' >
-         <FiBookOpen className='mr-3 position-relative text-white mt-1 ' style={{fontSize: 25, zIndex: 400}}/>
-         <div className='d-flex flex-column text-white position-relative' style={{fontSize: 18, zIndex: 400}}>
+         <FiBookOpen className='mr-3 position-relative text-white mt-1 resume-icon' style={{zIndex: 400}}/>
+         <div className='d-flex flex-column text-white position-relative resume-p' style={{zIndex: 400}}>
             <p className='text-white mb-1 font-weight-bold' >
              Scuola Internazionale di Comics (Padova, Italy)
              </p>
@@ -48,8 +48,8 @@ const Resume = () => {
        </div>
 
        <div className='d-flex align-items-start pt-5' >
-         <FiBriefcase className='mr-3 position-relative text-white mt-1 ' style={{fontSize: 25, zIndex: 400}}/>
-         <div className='d-flex flex-column text-white position-relative' style={{fontSize: 18, zIndex: 400}}>
+         <FiBriefcase className='mr-3 position-relative text-white mt-1 resume-icon' style={{zIndex: 400}}/>
+         <div className='d-flex flex-column text-white position-relative resume-p' style={{zIndex: 400}}>
            <p className='text-white  mb-1 font-weight-bold' >
              Happybrain (Verona, Italy)
            </p>
@@ -63,8 +63,8 @@ const Resume = () => {
        </div>
 
        <div className='d-flex align-items-start pt-5' >
-         <FiCode className='mr-3 position-relative text-white mt-1 ' style={{fontSize: 25, zIndex: 400}}/>
-         <div className='d-flex flex-column text-white position-relative' style={{fontSize: 18, zIndex: 400}}>
+         <FiCode className='mr-3 position-relative text-white mt-1 resume-icon' style={{zIndex: 400}}/>
+         <div className='d-flex flex-column text-white position-relative resume-p' style={{ zIndex: 400}}>
            <p className='text-white  mb-0 font-weight-bold' >
              Skills
            </p>

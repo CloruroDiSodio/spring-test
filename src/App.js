@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import logo from './logo.svg';
 import Goo from './Components/Goo'
 import './App.css'
@@ -17,9 +17,9 @@ import Contacts from "./Views/Contacts";
 const Content = props => {
   const location = useLocation();
   const transitions = useTransition(location, location => location.pathname, {
-    from: {opacity: 0, position: 'absolute', top:0, right: 0, width: 'calc(100% -  225px)', height: '100%'},
-    enter: { opacity: 1 },
-    leave: { opacity: 0 },
+    from: {opacity: 0, position: 'absolute', top:20, right: 0, width: '100%', height: '100%'},
+    enter: { opacity: 1, top:0 },
+    leave: { opacity: 0, top:20},
   })
   return transitions.map(({ item: location, props, key }) => (
     <animated.div key={key} style={props}>
@@ -33,17 +33,27 @@ const Content = props => {
 
 }
 
-function App() {
+const App = () =>  {
+
+  const [height, setHeight] = useState(window.innerHeight)
+
+  useEffect(() => {
+    window.addEventListener('resize', () => {
+      setHeight(window.innerHeight)
+    })
+  },[])
+
   return (
     <div className="App">
       <HashRouter>
-      <Container className='position-relative' style={{height: '100%'}} fluid>
-        <Goo />
+      <Container className='position-relative app-container' style={{height: '100%'}} fluid>
+        {(height > 768 )? <Goo /> : null}
         <Menu />
         <Content />
       </Container>
       <Circle className='circle-1'/>
       <Circle className='circle-2'/>
+        {(height > 768 )? null : <Circle className='circle-3'/>}
       </HashRouter>
     </div>
   );

@@ -5,13 +5,10 @@ import { withRouter } from "react-router";
 
 const Menu = (props) => {
 
-  React.useEffect(() => console.log(props))
-
   return(
     <Nav
       activeKey="/home"
-      className='pt-5 justify-content-end'
-      style={{paddingRight: 200}}
+      className='pt-md-5 pt-3 justify-content-md-end justify-content-center main-menu'
       //onSelect={selectedKey => alert(`selected ${selectedKey}`)}
     >
       <Nav.Item>
