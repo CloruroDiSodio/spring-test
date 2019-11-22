@@ -15,13 +15,13 @@ const Menu = (props) => {
       //onSelect={selectedKey => alert(`selected ${selectedKey}`)}
     >
       <Nav.Item>
-        <Link to="/" className={(props.location.pathname === '/')? 'nav-item nav-link active' : 'nav-item nav-link active'}>Home</Link>
+        <Link to="/" className={(props.location.pathname === '/')? 'nav-item nav-link active' : 'nav-item nav-link'}>Home</Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="link-1">Resume</Nav.Link>
+        <Link to="/resume" className={(props.location.pathname === '/resume')? 'nav-item nav-link active' : 'nav-item nav-link'}>Resume</Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="link-2">Contacts</Nav.Link>
+        <Link to="/contacts" className={(props.location.pathname === '/contacts')? 'nav-item nav-link active' : 'nav-item nav-link'}>Contacts</Link>
       </Nav.Item>
     </Nav>
   )

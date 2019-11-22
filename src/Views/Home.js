@@ -2,9 +2,9 @@ import React from 'react'
 import MainTitle from "../Components/MainTitle";
 
 
-const Home = () =>
+const Home = (props) =>
   <div className='w-100 h-100'>
-    <MainTitle/>
+    <MainTitle props={props}/>
   </div>
 
 export default Home

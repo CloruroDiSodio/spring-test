@@ -10,6 +10,8 @@ import Circle from "./Components/Circle";
 import Home from "./Views/Home";
 import {Switch, Route, useLocation, HashRouter} from 'react-router-dom'
 import {useTransition, animated} from 'react-spring'
+import Resume from "./Views/Resume";
+import Contacts from "./Views/Contacts";
 
 
 const Content = props => {
@@ -23,6 +25,8 @@ const Content = props => {
     <animated.div key={key} style={props}>
       <Switch location={location}>
         <Route path="/" exact component={Home}/>
+        <Route path="/resume" exact component={Resume}/>
+        <Route path="/contacts" exact component={Contacts}/>
         <Route component={Home} />
       </Switch>
     </animated.div>))
