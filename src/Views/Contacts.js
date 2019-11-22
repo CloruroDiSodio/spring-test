@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from "react-router-dom";
-import { FiAtSign, FiUser, FiGithub, FiLinkedin } from "react-icons/fi";
+import { FiAtSign, FiUser, FiGithub, FiLinkedin, FiCodepen } from "react-icons/fi";
 
 const Contacts = () => {
 
@@ -29,9 +29,10 @@ const Contacts = () => {
           </a>
         </div>
 
-        <div className='d-flex align-items-start pt-5' >
+        <div className='d-flex align-items-start pt-4' >
             <a href='https://github.com/CloruroDiSodio' target='_blank' className=''> <FiGithub className='mr-3 position-relative text-white contact-link-a ' style={{fontSize: 25, zIndex: 400}}/></a>
-            <a href='https://github.com/CloruroDiSodio' target='_blank' className=''> <FiLinkedin className='mr-3 position-relative text-white contact-link-a ' style={{fontSize: 25, zIndex: 400}}/></a>
+            <a href='https://www.linkedin.com/in/denisemoscon/' target='_blank' className=''> <FiLinkedin className='mr-3 position-relative text-white contact-link-a ' style={{fontSize: 25, zIndex: 400}}/></a>
+            <a href='https://codepen.io/pineappleSyrup/' target='_blank' className=''> <FiCodepen className='mr-3 position-relative text-white contact-link-a ' style={{fontSize: 25, zIndex: 400}}/></a>
         </div>
 
 
