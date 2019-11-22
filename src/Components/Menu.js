@@ -1,7 +1,12 @@
 import React from 'react'
 import {Nav} from "react-bootstrap";
+import {Link} from "react-router-dom";
+import { withRouter } from "react-router";
 
-const Menu = () => {
+const Menu = (props) => {
+
+  React.useEffect(() => console.log(props))
+
   return(
     <Nav
       activeKey="/home"
@@ -10,16 +15,16 @@ const Menu = () => {
       //onSelect={selectedKey => alert(`selected ${selectedKey}`)}
     >
       <Nav.Item>
-        <Nav.Link href="/home">About Us</Nav.Link>
+        <Link to="/" className={(props.location.pathname === '/')? 'nav-item nav-link active' : 'nav-item nav-link active'}>Home</Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="link-1">What we do</Nav.Link>
+        <Nav.Link eventKey="link-1">Resume</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="link-2">Team</Nav.Link>
+        <Nav.Link eventKey="link-2">Contacts</Nav.Link>
       </Nav.Item>
     </Nav>
   )
 }
 
-export default Menu
+export default withRouter(Menu)
