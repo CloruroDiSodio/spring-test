@@ -5,7 +5,7 @@ import { FiBookOpen, FiBriefcase, FiCode, FiUser } from "react-icons/fi";
 const Resume = () => {
 
   return(
-    <div className='w-100 h-75 d-flex justify-content-center flex-column align-items-start' style={{paddingLeft: 200}}>
+    <div className='w-100 h-100 d-flex justify-content-center flex-column align-items-start' style={{paddingLeft: 200}}>
       <div className='d-flex flex-column'>
         <div className='d-flex'>
           <h1 style={{color: '#ACE900', fontSize: 70, zIndex:400}} className='position-relative mr-3 mb-0'>Resume</h1>
