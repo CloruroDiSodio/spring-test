@@ -159,8 +159,8 @@ body {
 
 .circle-2{
   position: absolute;
-  top: -50%;
-  left: -20%;
+  top: -40%;
+  left: -15%;
 }
 
 .contact-link {
@@ -190,12 +190,16 @@ body {
   overflow-y: hidden;
 }
 
+.main-container.home{
+  margin-top: 5%;
+}
+
 .main-menu{
   padding-right: 20%;
 }
 
 .main-title{
-  font-size:110px ;
+  font-size:90px ;
 }
 
 .main-p {

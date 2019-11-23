@@ -4,7 +4,7 @@ import { FiMapPin } from "react-icons/fi";
 
 
 const MainTitle = (props) =>
-  <div className='w-100 h-75 d-flex justify-content-center flex-column align-items-start main-container'>
+  <div className='w-100 h-75 d-flex justify-content-center flex-column align-items-start main-container home'>
     <div className='d-flex flex-column'>
       <div className='d-flex'>
         <h1 style={{color: 'deepskyblue', zIndex:400}} className='position-relative mr-3 mb-0 main-title'>Make</h1>
