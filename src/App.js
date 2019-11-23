@@ -18,7 +18,7 @@ const Content = props => {
   const location = useLocation();
   const transitions = useTransition(location, location => location.pathname, {
     from: {opacity: 0, position: 'absolute', top:20, right: 0, width: '100%', height: '100%'},
-    enter: { opacity: 1, top:0, zIndex:100 },
+    enter: { opacity: 1, top:0 },
     leave: { opacity: 0, top:20},
   })
   return transitions.map(({ item: location, props, key }) => (
