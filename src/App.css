@@ -196,6 +196,8 @@ body {
 
 .main-menu{
   padding-right: 20%;
+  position: relative;
+  z-index: 500;
 }
 
 .main-title{
@@ -221,8 +223,12 @@ body {
   font-size: 18px;
 }
 
+@media only screen and (max-width: 677px) {
 
-@media only screen and (max-width: 768px) {
+}
+
+
+@media only screen and (max-width: 677px) {
 
   .App{
     overflow-y: auto!important;
@@ -231,7 +237,7 @@ body {
   .app-container{
     width: 100% !important;
     overflow-x: hidden!important;
-    overflow-y: auto;
+    overflow-y: hidden;
   }
 
   .main-container {
@@ -245,7 +251,7 @@ body {
     height: auto!important;
     padding-top: 30%;
     padding-bottom: 30%;
-    overflow-y: auto!important;
+    overflow-y: hidden!important;
   }
 
 

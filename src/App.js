@@ -35,11 +35,11 @@ const Content = props => {
 
 const App = () =>  {
 
-  const [height, setHeight] = useState(window.innerHeight)
+  const [width, setWidth] = useState(window.innerWidth)
 
   useEffect(() => {
     window.addEventListener('resize', () => {
-      setHeight(window.innerHeight)
+      setWidth(window.innerWidth)
     })
   },[])
 
@@ -47,13 +47,13 @@ const App = () =>  {
     <div className="App">
       <HashRouter>
       <Container className='position-relative app-container' style={{height: '100%'}} fluid>
-        {(height > 677 )? <Goo /> : null}
+        {(width > 1024 )? <Goo /> : null}
         <Menu />
         <Content />
       </Container>
       <Circle className='circle-1'/>
       <Circle className='circle-2'/>
-        {(height > 1024 )? null : <Circle className='circle-3'/>}
+        {(width > 1024 )? null : <Circle className='circle-3'/>}
       </HashRouter>
     </div>
   );
