@@ -13,7 +13,7 @@ const Resume = () => {
         </div>
       </div>
      <div className='row position-relative w-100 align-items-start justify-content-start'>
-       <Col md='6'>
+       <Col md='5'>
        <div className='d-flex align-items-start pt-5' >
          <FiUser className='mr-3 position-relative text-white mt-1 resume-icon' style={{ zIndex: 400}}/>
          <div className='d-flex flex-column text-white position-relative resume-p' style={{ zIndex: 400}}>
@@ -66,8 +66,8 @@ const Resume = () => {
        </div>
        </Col>
 
-{/*
-       <div className='d-flex align-items-start pt-5 col-md-6' >
+
+       <div className='d-flex align-items-start pt-5 col-md-5' >
          <FiCode className='mr-3 position-relative text-white mt-1 resume-icon' style={{zIndex: 400}}/>
          <div className='d-flex flex-column text-white position-relative resume-p' style={{ zIndex: 400}}>
            <p className='text-white  mb-0 font-weight-bold' >
@@ -92,7 +92,7 @@ const Resume = () => {
              PHP, Laravel (basic knowledge)
            </p>
          </div>
-       </div>*/}
+       </div>
 
 
 

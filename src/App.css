@@ -186,13 +186,15 @@ body {
 }
 
 .main-container {
-  padding-left: 20%;
+  padding-left: 15%;
+  margin-top: 2%;
   overflow-y: hidden;
 }
 
 .main-container.home{
   margin-top: 5%;
 }
+
 
 .main-menu{
   padding-right: 20%;
@@ -237,7 +239,7 @@ body {
   .app-container{
     width: 100% !important;
     overflow-x: hidden!important;
-    overflow-y: hidden;
+    overflow-y: auto;
   }
 
   .main-container {
@@ -251,7 +253,7 @@ body {
     height: auto!important;
     padding-top: 30%;
     padding-bottom: 30%;
-    overflow-y: hidden!important;
+    overflow-y: auto!important;
   }
 
 
