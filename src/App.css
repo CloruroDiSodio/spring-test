@@ -155,12 +155,14 @@ body {
   position: absolute;
   bottom: -55%;
   right: -25%;
+  z-index: 0;
 }
 
 .circle-2{
   position: absolute;
   top: -45%;
   left: -20%;
+  z-index: 0;
 }
 
 .contact-link {
