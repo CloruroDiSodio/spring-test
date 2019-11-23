@@ -47,7 +47,7 @@ const App = () =>  {
     <div className="App">
       <HashRouter>
       <Container className='position-relative app-container' style={{height: '100%'}} fluid>
-        {(height > 1024 )? <Goo /> : null}
+        {(height > 677 )? <Goo /> : null}
         <Menu />
         <Content />
       </Container>

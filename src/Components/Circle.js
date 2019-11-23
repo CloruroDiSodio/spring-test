@@ -40,7 +40,7 @@ const Circle = (props) => {
   },[])
 
   return(
-    (height <= 812)?
+    (height <= 677)?
       <svg width="150"  height="150"  xmlns="http://www.w3.org/2000/svg" className={props.className}>
       <defs>
         <linearGradient spreadMethod="pad" y2="0.914063" x2="0.738281" y1="0" x1="0" id="svg_5">
