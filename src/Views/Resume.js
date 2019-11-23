@@ -54,7 +54,7 @@ const Resume = () => {
          <FiBriefcase className='mr-3 position-relative text-white mt-1 resume-icon' style={{zIndex: 400}}/>
          <div className='d-flex flex-column text-white position-relative resume-p' style={{zIndex: 400}}>
            <p className='text-white  mb-1 font-weight-bold' >
-             Happybrain (Verona, Italy)
+             Happy Brain (Verona, Italy)
            </p>
            <p  className='text-white  mb-0'>
              React and React Native Developer
