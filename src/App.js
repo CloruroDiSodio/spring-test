@@ -12,6 +12,7 @@ import {Switch, Route, useLocation, HashRouter} from 'react-router-dom'
 import {useTransition, animated} from 'react-spring'
 import Resume from "./Views/Resume";
 import Contacts from "./Views/Contacts";
+import {FiRotateCcw} from 'react-icons/fi'
 
 
 const Content = props => {
@@ -46,6 +47,10 @@ const App = () =>  {
   return (
     <div className="App">
       <HashRouter>
+        <div className='phone-landscape d-flex justify-content-center align-items-center flex-column'>
+          <FiRotateCcw className='text-white text-center' style={{fontSize: 70}}/>
+          <p className='text-white text-center pt-5' style={{fontSize: 30}}>Please, rotate your device :)</p>
+        </div>
       <Container className='position-relative app-container' style={{height: '100%'}} fluid>
         {(width > 1024 )? <Goo /> : null}
         <Menu />

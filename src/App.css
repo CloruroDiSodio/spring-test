@@ -227,8 +227,37 @@ body {
   font-size: 18px;
 }
 
-@media only screen and (max-width: 677px) {
+.phone-landscape{
+  display: none;
+}
 
+.phone-landscape svg{
+  display: none;
+}
+
+.phone-landscape p{
+  display: none;
+}
+
+@media only screen and (max-width: 677px) and (orientation: landscape) {
+  .phone-landscape{
+    display: flex;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background-color: #181818;
+  }
+
+  .phone-landscape svg{
+    display: block;
+  }
+
+  .phone-landscape p{
+    display: block;
+  }
 }
 
 
