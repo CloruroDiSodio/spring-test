@@ -194,7 +194,7 @@ body {
 }
 
 .main-container.home{
-  margin-top: 5%;
+  margin-top: 0;
 }
 
 
@@ -299,6 +299,10 @@ body {
     padding-top: 40%;
     overflow-x: hidden!important;
     overflow-y: hidden!important;
+  }
+
+  .main-container.home{
+    padding-top: 10%!important;
   }
 
   .main-container.resume{
