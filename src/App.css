@@ -260,6 +260,27 @@ body {
   }
 }
 
+@media only screen and (max-width: 812px) and (orientation: landscape) {
+  .phone-landscape{
+    display: flex;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background-color: #181818;
+  }
+
+  .phone-landscape svg{
+    display: block;
+  }
+
+  .phone-landscape p{
+    display: block;
+  }
+}
+
 
 @media only screen and (max-width: 677px) {
 
