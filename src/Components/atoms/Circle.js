@@ -1,14 +1,16 @@
 import React, {useEffect, useState} from 'react'
-import {withRouter} from 'react-router-dom'
+import {useLocation} from 'react-router-dom'
 import {animated, useSpring} from "react-spring";
 
-const AnimatedCircle = ({location}) => {
+const AnimatedCircle = _props => {
+    const { pathname} = useLocation();
+
   const props = useSpring({ rx: 60, ry:60, from: { rx: 30, ry:40} })
   return (
     <animated.svg rx={props.rx} ry={props.ry}>
       <defs>
         <linearGradient spreadMethod="pad" y2="0.914063" x2="0.738281" y1="0" x1="0" id="svg_5">
-          <stop offset="0" stopColor={(location === '/')? "#b431f5" : (location === '/resume')? '#007bff' : '#ACE900'}/>
+          <stop offset="0" stopColor={(pathname === '/')? "#b431f5" : (pathname === '/resume')? '#007bff' : '#ACE900'}/>
           <stop offset="0.980469" stopOpacity="0" stopColor="0"/>
         </linearGradient>
       </defs>
@@ -30,6 +32,7 @@ const AnimatedCircle = ({location}) => {
 
 
 const Circle = (props) => {
+    const { pathname} = useLocation();
 
   const[width, setWidth] = useState(window.innerWidth)
 
@@ -45,7 +48,7 @@ const Circle = (props) => {
       *<svg width="150"  height="150"  xmlns="http://www.w3.org/2000/svg" className={props.className}>
       <defs>
         <linearGradient spreadMethod="pad" y2="0.914063" x2="0.738281" y1="0" x1="0" id="svg_5">
-          <stop offset="0" stopColor={(props.location.pathname === '/')? "#b431f5" : (props.location.pathname === '/resume')? '#007bff' : '#ACE900'}/>
+          <stop offset="0" stopColor={(pathname === '/')? "#b431f5" : (pathname === '/resume')? '#007bff' : '#ACE900'}/>
           <stop offset="0.980469" stopOpacity="0" stopColor="0"/>
         </linearGradient>
       </defs>
@@ -69,7 +72,7 @@ const Circle = (props) => {
       <svg width="1000" height="1000" xmlns="http://www.w3.org/2000/svg" className={props.className}>
         <defs>
           <linearGradient spreadMethod="pad" y2="0.914063" x2="0.738281" y1="0" x1="0" id="svg_5">
-            <stop offset="0" stopColor={(props.location.pathname === '/')? "#b431f5" : (props.location.pathname === '/resume')? '#007bff' : '#ACE900'}/>
+            <stop offset="0" stopColor={(pathname === '/')? "#b431f5" : (pathname === '/resume')? '#007bff' : '#ACE900'}/>
             <stop offset="0.980469" stopOpacity="0" stopColor="0"/>
           </linearGradient>
         </defs>
@@ -88,4 +91,4 @@ const Circle = (props) => {
   )
 }
 
-export default withRouter(Circle)
+export default Circle

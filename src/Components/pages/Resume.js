@@ -1,12 +1,11 @@
 import React from 'react'
-import {Link} from "react-router-dom";
 import { FiBookOpen, FiBriefcase, FiCode, FiUser } from "react-icons/fi";
 import {Col} from "react-bootstrap";
 
 const Resume = () => {
 
   return(
-    <div className='w-100 h-100 d-flex justify-content-center flex-column align-items-start main-container resume row'>
+    <div className='w-100 h-75 d-flex justify-content-center flex-column align-items-start main-container resume row'>
       <div className='d-flex flex-column'>
         <div className='d-flex'>
           <h1 style={{color: '#ACE900', zIndex:400}} className='position-relative mr-3 mb-0 resume-title'>Resume</h1>

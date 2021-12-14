@@ -1,5 +1,4 @@
 import React from 'react'
-import {Link} from "react-router-dom";
 import { FiAtSign, FiUser, FiGithub, FiLinkedin, FiCodepen } from "react-icons/fi";
 
 const Contacts = () => {
