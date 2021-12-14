@@ -3,14 +3,14 @@ import {
     BrowserRouter,
     Routes,
     Route,
+    useLocation,
 } from "react-router-dom";
 import Home from "../components/pages/Home";
 import Resume from "../components/pages/Resume";
 import Contacts from "../components/pages/Contacts";
-import Appetta from "../components/pages/Appetta/Appetta";
+import Appetta from '../components/pages/Appetta/Appetta';
 import Menu from "../components/atoms/Menu";
 import Circle from "../components/atoms/Circle";
-import {useLocation} from 'react-router-dom'
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import './transitions.css'
 import Goo from "../components/atoms/Goo";
